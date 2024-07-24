@@ -1,0 +1,35 @@
+.admin{
+    display: flex;
+    .admin_container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        margin-left: 300px;
+        width: calc(100% - 350px);
+        .revenue{
+            font-weight: 800;
+            font-size: 36px;
+            color: rgb(98, 0, 255);
+        }
+        .user_revenue_container{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            row-gap: 20px;
+            .user_revenue_item{
+                align-items: center;
+                justify-self: center;
+                width: 95%;
+                display: flex;
+                justify-content: space-between;
+                .user_revenue_info{
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        }
+       
+    }
+}

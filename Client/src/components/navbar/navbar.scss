@@ -1,0 +1,98 @@
+.navbar_container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: white;
+    border-bottom: 1px solid rgb(233, 233, 233);
+    .navbar{
+        padding: 12px 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        height: 70px;
+        .cart_container{
+            background-color: #00000085;
+            width: 100%;
+            top: 0;
+            position: absolute;
+            height: 100vh;
+            left: 0;
+        }
+        .logo{
+            cursor: pointer;
+            width: 200px;
+        }
+    
+        .logo:hover{
+            opacity: 0.8;
+        }
+    
+        .menu_container{
+            position: absolute;
+            left: calc(50% - 200px);
+            display: flex;
+            column-gap: 50px;
+            width: 400px;
+            justify-content: center;
+            a{
+                text-decoration: none;
+                color: black;
+            }
+            a:hover{
+                opacity: 0.8;
+            }
+            a.active{
+                font-weight: 700;
+                color: #E7366B;
+            }
+            
+        }
+    
+        .signin_button{
+            cursor: pointer;
+            padding: 12px 24px;
+            background-color: black;
+            color: white;
+            font-size: 16px;
+            border-radius: 24px;
+            font-weight: 700;
+            text-decoration: none;
+        }
+        .signin_button:hover{
+            opacity: 0.8;
+        }
+    
+        .signout_container{
+            display: flex;
+            align-items: center;
+            column-gap: 20px;
+            .nav_info_container{
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                img{
+                    width: 50px;
+                    height: 50px;
+                    margin-right: 12px;
+                }
+            }
+            svg{
+                font-size: 20px;
+                cursor: pointer;
+                color: black;
+            }
+            svg:hover{
+                opacity: 0.5;
+            }
+            .fa-xmark{
+                z-index: 10000;
+                cursor: pointer;
+                color: white;
+                font-size: 24px;
+            }
+        }
+    }
+}
